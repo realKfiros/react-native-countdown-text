@@ -1,6 +1,8 @@
 # react-native-countdown-text
 
-[![npm](https://img.shields.io/npm/v/:package.svg?style=flat-square)](https://www.npmjs.com/package/react-native-countdown-text)
+[![npm version](https://badge.fury.io/js/react-native-countdown-text.svg)](https://badge.fury.io/js/react-native-countdown-text)
+
+A React Native component that converts a timestamp of a future date to a readable countdown clock, based on a format.
 
 ## Installation
 
