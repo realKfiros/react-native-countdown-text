@@ -1,5 +1,7 @@
 # react-native-countdown-text
 
+[![npm](https://img.shields.io/npm/v/:package.svg?style=flat-square)](https://www.npmjs.com/package/react-native-countdown-text)
+
 ## Installation
 
 ```

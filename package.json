@@ -1,6 +1,6 @@
 {
   "name": "react-native-countdown-text",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Tiny React Native component that formats a timestamp (of a date in the future) to a readable countdown to that time",
   "main": "index.js",
   "scripts": {
