@@ -29,4 +29,4 @@ export default class App extends Component {
 |---|---|---|---|
 |**`format`**|`string`| `{d}:{h}:{m}:{s}` |The format that will be applied to the milliseconds|
 |**`finishTime`**|`number`| **REQUIRED** |The future date timestamp|
-|**`textStyle`**|`Text Style`||The style that will be applied to the countdown text|
+|**`textStyle`**|`object`||The style that will be applied to the countdown text|
