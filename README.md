@@ -31,7 +31,7 @@ export default class App extends Component {
 |**`finishTime`**|`number`| **REQUIRED** |The future date timestamp|
 |**`textStyle`**|`object`||The style that will be applied to the countdown text|
 
-### `textStyle` examples
+### `format` examples
 
 * `'{d} days, {h} hours, {m} minutes, {s} seconds'`
 * `'{h}:{m}:{s}'`
