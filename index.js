@@ -50,7 +50,7 @@ class Countdown extends Component {
     render() {
         return (
             <Text style={this.props.textStyle}>{this.state.show}</Text>
-        );  // this.props.textStyle: the format of the text
+        );
     }
 }
 
