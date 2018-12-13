@@ -7,28 +7,28 @@ class Countdown extends Component {
         super(props);
         this.left = null;
         this.state = {
-            millisecondsLeft: this.props.finishTime*1000 - (new Date().getTime()),
-            show: '',
+            millisecondsLeft: this.props.finishTime*1000 - (new Date().getTime()),  // the time that is left in milliseconds
+            show: '',   // the time to show (it's a string, not a number)
         }
     }
 
     componentDidMount() {
         this.left = setInterval(() => {
-            this.setState({ millisecondsLeft: this.props.finishTime*1000 - (new Date().getTime()) });
-            this.millisecondsToString();
-        }, 1000)
+            this.setState({ millisecondsLeft: this.props.finishTime*1000 - (new Date().getTime()) });   // change the number of the milliseconds
+            this.millisecondsToString();    // calls the method that converts the milliseconds into a readable string
+        }, 1000)    // this methods is being invocated every second (1000 milliseconds)
     }
 
     componentWillUnmount() {
         clearInterval(this.left);
     }
 
-    millisecondsToString = () => {
-        seconds = this.state.millisecondsLeft / 1000 - (this.state.millisecondsLeft / 1000)%1;
-        minutes = seconds / 60 - (seconds / 60)%1;
-        hours = minutes / 60 - (minutes / 60)%1;
-        days = hours / 24 - (hours / 24)%1;
-        if (this.state.millisecondsLeft < 0) {
+    millisecondsToString = () => {  // the methods that converts the milliseconds remaining to a readable string
+        seconds = this.state.millisecondsLeft / 1000 - (this.state.millisecondsLeft / 1000)%1;  // seconds
+        minutes = seconds / 60 - (seconds / 60)%1;  // minutes
+        hours = minutes / 60 - (minutes / 60)%1;    // hours
+        days = hours / 24 - (hours / 24)%1; // days
+        if (this.state.millisecondsLeft < 0) {  // if the countdown is finished
             this.setState({
                 show: this.props.format.replace('{d}', 0).replace('{h}', 0).replace('{m}', this.addZeroIfNeeded(0)).replace('{s}', this.addZeroIfNeeded(0))
             });
@@ -39,7 +39,7 @@ class Countdown extends Component {
         }
     }
 
-    addZeroIfNeeded = (num) => {
+    addZeroIfNeeded = (num) => {    // if the number of hours, minutes or seconds (in the string) is less than 10
         if (num < 10) {
             return `0${num}`;
         } else {
@@ -50,7 +50,7 @@ class Countdown extends Component {
     render() {
         return (
             <Text style={this.props.textStyle}>{this.state.show}</Text>
-        )
+        );  // this.props.textStyle: the format of the text
     }
 }
 
