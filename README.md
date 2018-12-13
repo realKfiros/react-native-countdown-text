@@ -33,7 +33,7 @@ export default class App extends Component {
 
 ### `textStyle` examples
 
-* `"{d} days, {h} hours, {m} minutes, {s} seconds"`
-* `"{h}:{m}:{s}"`
-* `"{d} days, {h}:{m}:{s}"`
-* `"{h}:{s}"`
+* `'{d} days, {h} hours, {m} minutes, {s} seconds'`
+* `'{h}:{m}:{s}'`
+* `'{d} days, {h}:{m}:{s}'`
+* `'{h}:{s}'`
