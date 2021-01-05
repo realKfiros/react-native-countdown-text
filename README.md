@@ -27,13 +27,13 @@ export default class App extends Component {
 
 | Name | Type | Default | Description |
 |---|---|---|---|
-|**`format`**|`string`| `{d}:{h}:{m}:{s}` |The format that will be applied to the milliseconds|
+|**`format`**|`string`| `d:h:m:s` |The format that will be applied to the milliseconds|
 |**`finishTime`**|`number`| **REQUIRED** |The future date timestamp|
 |**`textStyle`**|`object`||The style that will be applied to the countdown text|
 
 ### `format` examples
 
-* `'{d} days, {h} hours, {m} minutes, {s} seconds'`
-* `'{h}:{m}:{s}'`
-* `'{d} days, {h}:{m}:{s}'`
-* `'{h}:{s}'`
+* `d [days], h [hours], m [minutes], s [seconds]`
+* `'h m s`
+* `'d [days], h:m:s'`
+* `'h:s'`
